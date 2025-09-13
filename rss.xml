@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>六月墨语</title><description>愿你历尽千帆，归来仍是少年！</description><link>https://blog.june.ink/</link><language>zh-CN</language><item><title>博客迁移进行中</title><link>https://blog.june.ink/posts/blog-migration-in-progress/</link><guid isPermaLink="true">https://blog.june.ink/posts/blog-migration-in-progress/</guid><description>博客正在从旧站点迁移到新的Soak主题，友链已完成迁移</description><pubDate>Tue, 09 Sep 2025 21:30:00 GMT</pubDate><content:encoded>&lt;h1&gt;博客迁移进行中&lt;/h1&gt;
+&lt;h2&gt;🚧 迁移状态通知&lt;/h2&gt;
+&lt;p&gt;博客正在从 https://blog.june.ink 迁移到新的 Soak 主题中，预计完成时间为几天内。&lt;/p&gt;
+&lt;h3&gt;已完成项目&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ &lt;strong&gt;友链迁移&lt;/strong&gt;: 20个友链已成功迁移，可在 &lt;a href=&quot;/pages/friends/&quot;&gt;朋友圈&lt;/a&gt; 查看&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;主题配置&lt;/strong&gt;: 基本页面结构和样式已配置完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;进行中项目&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🔄 &lt;strong&gt;文章迁移&lt;/strong&gt;: 正在将历史文章从旧博客迁移到新主题&lt;/li&gt;
+&lt;li&gt;🔄 &lt;strong&gt;图片资源&lt;/strong&gt;: 图片和媒体文件迁移中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;感谢您的耐心等待！&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📝 Markdown/MDX 内容&lt;/li&gt;
+&lt;li&gt;🚀 基于 Astro 构建&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded><category>博客日志</category></item><item><title>httpsok一分钟搞定SSL证书自动续期</title><link>https://blog.june.ink/posts/httpsok/</link><guid isPermaLink="true">https://blog.june.ink/posts/httpsok/</guid><description>httpsok是一个便捷的HTTPS证书自动续签工具，专为Nginx、OpenResty服务器设计，提供简单高效的SSL证书自动续期服务。软件的特色包括自动检测和兼容多域名、多服务器环境，支持泛解析和即将失效证书监控。httpsok支持主流Linux系统和docker容器，适用于老旧系统和复杂配置的生产环境，能够自动识别证书配置。免费版包括三张通配符证书、50次自动部署等服务。</description><pubDate>Sat, 09 Nov 2024 19:44:38 GMT</pubDate><content:encoded>&lt;h2&gt;介绍&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;httpsok&lt;/strong&gt; 是一个便捷的 HTTPS 证书自动续签工具，专为 Nginx 、OpenResty 服务器设计。已服务众多中小企业，&lt;strong&gt;稳定&lt;/strong&gt;、&lt;strong&gt;安全&lt;/strong&gt;、&lt;strong&gt;可靠&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一行命令，一分钟轻松搞定SSL证书自动续期&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;免费版内容:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通配符证书（有效期90天） &lt;em&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/em&gt; 张&lt;/li&gt;
+&lt;li&gt;自动部署 &lt;em&gt;&lt;strong&gt;50&lt;/strong&gt;&lt;/em&gt; 次&lt;/li&gt;
+&lt;li&gt;服务器授权 &lt;em&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/em&gt; 台&lt;/li&gt;
+&lt;li&gt;证书监控 &lt;em&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;/em&gt; 次&lt;/li&gt;
+&lt;li&gt;境外加速支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;使用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nginx自动续期https证书&lt;/li&gt;
+&lt;li&gt;适合多台nginx服务器的情况&lt;/li&gt;
+&lt;li&gt;适合多域名、泛解析&lt;/li&gt;
+&lt;li&gt;老旧系统，不敢去修改nginx配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;⚡️ 简单高效&lt;/strong&gt; 一行命令，一分钟轻松搞定SSL证书自动续签&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;✅ 自动检测&lt;/strong&gt; 无需关心nginx配置，自动识别证书配置，适合老旧系统、复杂配置的生产环境&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;✅ 泛解析、多域名、多服务器&lt;/strong&gt; 轻松搞定&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;✅ 证书监控&lt;/strong&gt; 对于即将失效的证书，提供公众号推送提醒&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;✅ 兼容性好&lt;/strong&gt; 兼容主流Linux系统 &lt;code&gt;Debain&lt;/code&gt; &lt;code&gt;CentOS&lt;/code&gt; &lt;code&gt;Ubuntu&lt;/code&gt; &lt;code&gt;TencentOS&lt;/code&gt; 和 &lt;code&gt;docker容器&lt;/code&gt;环境&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;✅ 支持手动申请&lt;/strong&gt; 支持手动申请证书&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;✅ CDN、LB、OSS轻松搞定&lt;/strong&gt; 支持主流云厂商&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;功能预览&lt;/h2&gt;
+&lt;p&gt;&amp;lt;div style=&quot;display: flex; flex-wrap: wrap; gap: 10px;&quot;&amp;gt;
+&amp;lt;img src=&quot;https://cdn.sa.net/2024/11/09/PiUQH3lA9BoNuRM.png&quot; style=&quot;width: calc(50% - 5px);&quot; /&amp;gt;
+&amp;lt;img src=&quot;https://cdn.sa.net/2024/11/09/jnYdMIwmDaNFuTi.png&quot; style=&quot;width: calc(50% - 5px);&quot; /&amp;gt;
+&amp;lt;img src=&quot;https://cdn.sa.net/2024/11/09/Qea8gXxpkdmWVJF.png&quot; style=&quot;width: calc(50% - 5px);&quot; /&amp;gt;
+&amp;lt;img src=&quot;https://cdn.sa.net/2024/11/09/uSAbUXiaCFJfMND.png&quot; style=&quot;width: calc(50% - 5px);&quot; /&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/11/09/pIaxmkjt5K2HPy6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/11/09/TjGoI7AtHlShbmC.png&quot; alt=&quot;证书管理&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/11/09/XIMEOGn5bfsgx2p.png&quot; alt=&quot;自动部署&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/11/09/Yk6OZPMTjvesyDg.png&quot; alt=&quot;证书监控&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/11/09/HxTAja2eFfwqpDU.png&quot; alt=&quot;证书申请&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/11/09/BDlkVhSg8EZA4fn.png&quot; alt=&quot;证书下载&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a href=&quot;https://httpsok.com/p/4tdL&quot;&gt;&lt;em&gt;&lt;strong&gt;→前往申请←&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;文档&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;官方帮助文档地址：&lt;a href=&quot;https://httpsok.com/doc/&quot;&gt;https://httpsok.com/doc/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded><category>网络工具</category></item><item><title>Sink部署记录</title><link>https://blog.june.ink/posts/sink/</link><guid isPermaLink="true">https://blog.june.ink/posts/sink/</guid><description>本教程详细介绍了如何将 Sink 链接缩短工具部署到 Cloudflare Pages 上。步骤包括 Fork 仓库、创建 Cloudflare Pages 项目、配置环境变量、命名空间和 Workers AI 绑定、绑定 Analytics Engine 以及重新部署的过程。每个步骤都配有图示，确保用户可以顺利完成部署。</description><pubDate>Sat, 14 Sep 2024 20:20:27 GMT</pubDate><content:encoded>&lt;h2&gt;Sink 部署教程：如何将 Sink 部署到 Cloudflare Pages 上&lt;/h2&gt;
+&lt;p&gt;本教程将为你详细讲解如何将 Sink 链接缩短工具部署到 Cloudflare Pages 上。我们将一步步指导你完成整个过程，包括仓库的 fork、Cloudflare Pages 项目创建、环境变量配置、KV 命名空间绑定等操作。每一步都附有详细的步骤说明和图片，帮助你顺利完成部署。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;步骤 1：Fork 仓库&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;将仓库 Fork 到你的个人 GitHub 账户中。&lt;/p&gt;
+&lt;p&gt;点击&lt;strong&gt;Create fork&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;======》&lt;a href=&quot;https://github.com/ccbikai/Sink/fork&quot;&gt;点我Fork&lt;/a&gt;《======
+&lt;img src=&quot;https://cdn.sa.net/2024/09/14/qXuiCxPGybThf87.png&quot; alt=&quot;Fork 仓库&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;步骤 2：创建 Cloudflare Pages 项目&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;登录到&lt;strong&gt;Cloudflare Dashboard&lt;/strong&gt;,导航到 &lt;strong&gt;Workers 和 Pages&lt;/strong&gt; 选项卡，点击 &lt;strong&gt;创建&lt;/strong&gt; 按钮。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/DC7B3PeZQXWlUqO.png&quot; alt=&quot;创建 Cloudflare Pages 项目&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择&lt;strong&gt;Pages&lt;/strong&gt; 选项卡，点击&lt;strong&gt;连接到Git&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/epKwJosjV6LrgTc.png&quot; alt=&quot;选择pages选项卡&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/tkjpYuziJMVOSgZ.png&quot; alt=&quot;Git项目&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择 &lt;strong&gt;Nuxt.js&lt;/strong&gt; 作为预设，Cloudflare 会自动检测到项目的配置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置环境变量&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;NUXT_SITE_TOKEN&lt;/code&gt;: 必须超过 8 个字符，为你的登陆密码。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NUXT_CF_ACCOUNT_ID&lt;/code&gt;: &lt;a href=&quot;https://www.nodeseek.com/jump?to=https%3A%2F%2Fdevelopers.cloudflare.com%2Ffundamentals%2Fsetup%2Ffind-account-and-zone-ids%2F&quot;&gt;查找你的账户 ID&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NUXT_CF_API_TOKEN&lt;/code&gt;: &lt;a href=&quot;https://www.nodeseek.com/jump?to=https%3A%2F%2Fdevelopers.cloudflare.com%2Ffundamentals%2Fapi%2Fget-started%2Fcreate-token%2F&quot;&gt;创建 Cloudflare API 令牌&lt;/a&gt;。该令牌应至少具有 &lt;code&gt;Account.Account Analytics&lt;/code&gt; 权限。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/YESzbgqdUmrIRFe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;当以上步骤都配置完毕之后，点击&lt;strong&gt;保存并部署&lt;/strong&gt;，之后点击&lt;strong&gt;取消部署&lt;/strong&gt;
+&lt;img src=&quot;https://cdn.sa.net/2024/09/14/QsWTI6Jg9xfjo7U.png&quot; alt=&quot;cancel-build&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;点击&lt;strong&gt;继续处理项目&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/UoZAnFe9h1yOslz.png&quot; alt=&quot;image-20240914195744250&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;步骤 3：配置 KV 命名空间和其他绑定&lt;/h3&gt;
+&lt;p&gt;部署开始后，我们还需要在 Cloudflare Pages 中进行一些额外的配置：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;到KV创建一个命名空间
+&lt;img src=&quot;https://cdn.sa.net/2024/09/14/eckvpm64dGt1JVb.png&quot; alt=&quot;image-20240914200856876&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;KV名称随意&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/vT9D4JFeAINyQ6d.png&quot; alt=&quot;image-20240914201013546&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;步骤 4：KV 命名空间绑定&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;strong&gt;KV&lt;/strong&gt; 中，绑定一个 KV 命名空间并将其命名为 &lt;code&gt;KV&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/ql9cu2AFYZSTCIU.png&quot; alt=&quot;image-20240914201427255&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;步骤 5：Workers AI 绑定（可选）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;如果你希望使用 AI 生成短链接功能，导航到 &lt;strong&gt;Workers AI Bindings&lt;/strong&gt;，绑定 &lt;code&gt;AI&lt;/code&gt; 变量到 Workers AI Catalog。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/Tw7nJvy9RhsufDU.png&quot; alt=&quot;image-20240914201551723&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;步骤 6：Analytics Engine 绑定&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;绑定 Cloudflare Analytics Engine。将 &lt;code&gt;ANALYTICS&lt;/code&gt; 变量绑定到 Sink 数据集，并确保已为你的 Cloudflare 账户启用了 Analytics Engine Beta 版。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/vIVa5Ub6oG1hpDr.png&quot; alt=&quot;image-20240914201654389&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;步骤 7：重新部署&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;所有绑定完成后，回到 &lt;strong&gt;部署&lt;/strong&gt;，点击**···&lt;strong&gt;，点击&lt;/strong&gt;重试部署**。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/09/14/L98oajYndEyb5AQ.png&quot; alt=&quot;image-20240914201751830&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重新部署后，项目将正常运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content:encoded><category>运维部署</category></item><item><title>解决CentOS 7生命周期结束后的yum源问题</title><link>https://blog.june.ink/posts/centos-7-eol-yum-repo-fix/</link><guid isPermaLink="true">https://blog.june.ink/posts/centos-7-eol-yum-repo-fix/</guid><description>从2024年6月30日起，CentOS 7将结束生命周期，官方不再提供支持。文章详述更换yum源的方法，以解决yum命令报错和无法使用问题。介绍的方法包括通过替换yum配置文件、修改现有配置指向CentOS Vault库和编辑现有repo文件。文章强调尽管换源是临时方案，但建议尽早更换到新系统，以保障安全和系统性能。</description><pubDate>Mon, 05 Aug 2024 15:44:51 GMT</pubDate><content:encoded>&lt;h3&gt;解决CentOS 7生命周期结束后的yum源问题&lt;/h3&gt;
+&lt;p&gt;自2024年6月30日起，CentOS 7的生命周期正式结束，这意味着官方将不再对其进行支持和维护。对于使用CentOS 7的用户而言，这不仅意味着安全更新的停止，还意味着默认的yum源将无法再使用。如果您在使用yum命令安装或更新软件包时遇到404错误或“Could not resolve host: mirrorlist.centos.org; Unknown error”的提示，那么很有可能是因为yum源已经失效。&lt;/p&gt;
+&lt;p&gt;为了解决这个问题，本文将介绍几种更换yum源的方法，并提供相关操作步骤，帮助您顺利过渡。同时，我们也建议及时更换操作系统，以保持系统的安全性和稳定性。&lt;/p&gt;
+&lt;h4&gt;方法一：通过替换yum配置文件&lt;/h4&gt;
+&lt;p&gt;这种方法通过下载新的repo文件替换现有文件，步骤简单且易于执行。&lt;/p&gt;
+&lt;h5&gt;步骤1：使用wget命令下载新的repo文件&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;wget -O /etc/yum.repos.d/CentOS-Base.repo http://file.kangle.cccyun.cn/repo/Centos-7.repo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;curl -o /etc/yum.repos.d/CentOS-Base.repo http://file.kangle.cccyun.cn/repo/Centos-7.repo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这一步将新的repo文件下载到指定目录，替换现有的yum配置文件。&lt;/p&gt;
+&lt;h5&gt;步骤2：重建yum缓存&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum clean all
+yum makecache
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;清理yum缓存并重新生成缓存，以确保新的源配置生效。&lt;/p&gt;
+&lt;h4&gt;方法二：通过修改现有yum配置文件&lt;/h4&gt;
+&lt;p&gt;这种方法通过直接编辑现有的yum配置文件，将yum源指向CentOS Vault存档库。&lt;/p&gt;
+&lt;h5&gt;步骤1：注释掉现有的mirrorlist配置&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo sed -i &apos;s/mirrorlist/#mirrorlist/g&apos; /etc/yum.repos.d/CentOS-*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这一步将yum配置文件中的mirrorlist条目注释掉，使其不再使用官方镜像列表。&lt;/p&gt;
+&lt;h5&gt;步骤2：启用baseurl指向CentOS Vault&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo sed -i &apos;s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g&apos; /etc/yum.repos.d/CentOS-*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这一步将注释掉的baseurl修改为启用状态，并将其指向CentOS Vault存档库。&lt;/p&gt;
+&lt;h5&gt;步骤3：重建yum缓存&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum clean all
+yum makecache
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;清理yum缓存并重新生成缓存，以确保新的源配置生效。&lt;/p&gt;
+&lt;h4&gt;方法三：通过编辑现有repo文件&lt;/h4&gt;
+&lt;p&gt;这种方法类似于方法二，但提供了更为详细和具体的编辑步骤。&lt;/p&gt;
+&lt;h5&gt;步骤1：替换mirror.centos.org为vault.centos.org&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/*.repo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这一步将所有repo文件中的mirror.centos.org替换为vault.centos.org。&lt;/p&gt;
+&lt;h5&gt;步骤2：启用baseurl&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/*.repo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将注释掉的baseurl修改为启用状态。&lt;/p&gt;
+&lt;h5&gt;步骤3：注释掉mirrorlist&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/*.repo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将所有repo文件中的mirrorlist条目注释掉。&lt;/p&gt;
+&lt;h5&gt;步骤4：重建yum缓存&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum clean all
+yum makecache
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;清理yum缓存并重新生成缓存，以确保新的源配置生效。&lt;/p&gt;
+&lt;h4&gt;小结&lt;/h4&gt;
+&lt;p&gt;这三种方法在实现目标上是相同的，但具体实现过程和细节有所不同。方法一通过下载新的repo文件替换现有文件，操作简单快捷；方法二通过直接编辑现有文件，灵活且易于控制；方法三提供了更为详细的编辑步骤，适合对配置文件有更高要求的用户。&lt;/p&gt;
+&lt;h4&gt;建议：及时更换操作系统&lt;/h4&gt;
+&lt;p&gt;虽然通过更换yum源可以继续使用CentOS 7一段时间，但这只是暂时的解决方案。随着时间的推移，使用过期系统会带来越来越多的安全隐患和兼容性问题。因此，我们强烈建议您考虑升级到新的操作系统版本或迁移到其他受支持的Linux发行版，如Debian 12、CentOS 9 Stream、Rocky Linux或AlmaLinux。&lt;/p&gt;
+&lt;p&gt;更换到受支持的系统不仅能确保您继续获得最新的安全更新和技术支持，还能让您的系统保持在一个稳定和高效的运行状态。Debian 12作为一个稳健且广受欢迎的Linux发行版，是一个值得考虑的选择。它提供了长期支持和丰富的软件包资源，适合各种服务器和桌面应用场景。&lt;/p&gt;
+&lt;p&gt;希望这篇博客能帮助您解决CentOS 7生命周期结束后遇到的问题，并为您的系统升级提供一些参考。感谢您的阅读！&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;参考文献&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://vault.centos.org/&quot;&gt;CentOS Vault&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bbs.naixi.net/forum.php?mod=viewthread&amp;amp;tid=35&amp;amp;highlight=centos&quot;&gt;CentOS7停止维护后如何修复yum源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.cccyun.cn/post-530.html&quot;&gt;解决CentOS 7停止更新支持后yum源失效&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded><category>Linux教程</category></item><item><title>一个status项目推荐</title><link>https://blog.june.ink/posts/status/</link><guid isPermaLink="true">https://blog.june.ink/posts/status/</guid><description>本教程介绍如何使用Docker、Cloudflare账号和服务器来监控服务器的运行状态。首先需要下载项目并新建Cloudflare KV和Worker。设置好环境变量后，可以选择安装配置duplicati监控备份状态。最后，通过Uptimerobot来进行进一步的服务器监控配置，包括API申请和监控名称配置。</description><pubDate>Fri, 02 Aug 2024 23:08:12 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://status.mcenjoy.cn&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;简单一个原理图&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/08/02/L54viynsxEeXaZk.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;需要准备的东西&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Cloudflare 账号&lt;/li&gt;
+&lt;li&gt;最少一台需要监控的服务器&lt;/li&gt;
+&lt;li&gt;服务器安装好 Docker&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;教程开始&lt;/h3&gt;
+&lt;h4&gt;下载项目&lt;/h4&gt;
+&lt;p&gt;请前往 &lt;a href=&quot;https://github.com/mcoo/status/releases&quot;&gt;release&lt;/a&gt; 自行下载&lt;/p&gt;
+&lt;h4&gt;新建 Cloudflare KV&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/08/02/imnCtoPuhrw9Zzx.png&quot; alt=&quot;img&quot; /&gt;
+这里需要设置两个值：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;backup&lt;/code&gt; 设置为 &lt;code&gt;{}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;errors&lt;/code&gt; 设置为 &lt;code&gt;[]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;新建 Cloudlfare Worker&lt;/h4&gt;
+&lt;p&gt;设置环境变量，请设置到 &lt;code&gt;制作&lt;/code&gt; 里面，不要搞到 &lt;code&gt;预览&lt;/code&gt; 中
+&lt;img src=&quot;https://cdn.sa.net/2024/08/02/3eMEglC2twhIYdb.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;变量名称&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;BACKUP_HTTP_TOKEN&lt;/td&gt;
+&lt;td&gt;回调备份结果时用于鉴权&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TOKEN&lt;/td&gt;
+&lt;td&gt;Uptimebot 的 API token 【readonly 就行】&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;INFO&lt;/td&gt;
+&lt;td&gt;自定义的一些信息，看下方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;INFO 的一个例子：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+	&quot;name&quot;: &quot;Enjoy&quot;,
+	&quot;rtl&quot;: true,
+	&quot;avatar&quot;: &quot;https://cdn.linux.do/user_avatar/linux.do/mcenjoy/288/80800_2.png&quot;,
+	&quot;desc&quot;: &quot;一个喜欢研究的宅，欢迎各位大佬交流。&amp;lt;br /&amp;gt;&amp;lt;a style=&apos;--n-text-color: #63e2b7; --n-bezier: cubic-bezier(.4, 0, .2, 1);&apos; href=&apos;https://linux.do/u/mcenjoy/summary&apos; class=&apos;n-a&apos;&amp;gt;@mcenjoy [LINUX.DO]&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;a class=&apos;n-a&apos; style=&apos;--n-text-color: #63e2b7; --n-bezier: cubic-bezier(.4, 0, .2, 1);&apos; href=&apos;https://www.nodeseek.com/space/15759&apos;&amp;gt;@mcenjoy [NS]&amp;lt;/a&amp;gt;&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;rtl 为下方状态条由右向左显示
+&lt;img src=&quot;https://cdn.sa.net/2024/08/02/RJSPxwvepLWBk8n.png&quot; alt=&quot;img&quot; /&gt;
+然后绑定第二步的 KV 设置名称为 &lt;code&gt;STATUS&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;安装配置 duplicati 【这里若不需要监控备份的状态可以跳过本步骤】&lt;/h4&gt;
+&lt;p&gt;这里用的 docker-compose，端口反代什么的需要自行设置，网上应该有，不行问问 GPT&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yml&quot;&gt;  backup:
+    image: lscr.io/linuxserver/duplicati:latest
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Asia/Shanghai
+      - CLI_ARGS= #optional
+    volumes:
+      - ./duplicati/config:/config # 存放duplicat的i配置文件
+      - ./duplicati/backups:/backups
+      - ../app:/source
+    restart: unless-stopped
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;配置完备份任务后，设置 &amp;gt; 默认选项 &amp;gt; 以文本形式编辑，注意配置你自己的 &lt;code&gt;URL&lt;/code&gt; 和 &lt;code&gt;BACKUP_HTTP_TOKEN&lt;/code&gt;
+&lt;img src=&quot;https://cdn.sa.net/2024/08/02/BN2ZQgi9b3dcAj5.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-ini&quot;&gt;--send-http-level=All
+--send-http-url=https://status.mcenjoy.cn/api/backup?token=&amp;lt;BACKUP_HTTP_TOKEN&amp;gt;
+--send-http-verb=POST
+--send-http-result-output-format=Json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Uptimerobot 配置&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://old.uptimerobot.com/dashboard&quot;&gt;API 申请&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;监控名称配置
+&lt;img src=&quot;https://cdn.sa.net/2024/08/02/m2uXzqpQBj5RW7C.png&quot; alt=&quot;img&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;举个例子 &lt;code&gt;监控站${国家:us}${标签:info|Cloudflare Worker}${类别:应用}&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最后展示在页面上的名称是排除所有 &lt;code&gt;${}&lt;/code&gt; 的内容，也就是 &lt;code&gt;监控站&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;${国家:us}&lt;/code&gt; 为配置前面的国家标识 &lt;a href=&quot;https://flagicons.lipis.dev/&quot;&gt;国家列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;${标签:info|Cloudflare Worker}&lt;/code&gt; 显示在下面的标签&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;${类别:应*用}&lt;/code&gt; 可自行配置类别*&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded><category>运维部署</category></item><item><title>Vercel 部署站点提速指南</title><link>https://blog.june.ink/posts/vercel-boost/</link><guid isPermaLink="true">https://blog.june.ink/posts/vercel-boost/</guid><description>Vercel是一个前端部署平台，在亚洲设有多个节点。随着香港节点的访问速度下降，本文提出了一种通过手动解析到其他亚洲节点如台湾、韩国、日本和新加坡等，以分担压力并提升访问速度的方法。具体操作包括在Vercel上绑定自定义域名，将域名CNAME指向&apos;vercel.cdn.yt-blog.top&apos;，从而实现加速。虽然能显著提升速度，但使用者需要自行评估稳定性和可用性。</description><pubDate>Wed, 31 Jul 2024 20:17:51 GMT</pubDate><content:encoded>&lt;h2&gt;背景介绍&lt;/h2&gt;
+&lt;p&gt;Vercel 是一个广泛使用的前端部署平台，不仅支持 Hexo 博客的托管，还能部署多种服务。很多站长选择将网站托管在 Vercel，尤其是选择距离中国大陆最近的香港节点。然而，随着使用人数的增加，香港节点的访问速度逐渐变慢。为了改善这一状况，本文推荐一种使用加速节点的方法，提升 Vercel 部署站点的访问速度。&lt;/p&gt;
+&lt;h2&gt;加速方案&lt;/h2&gt;
+&lt;h3&gt;基本原理&lt;/h3&gt;
+&lt;p&gt;Vercel 在亚洲地区拥有多个节点，包括中国台湾、韩国、日本和新加坡等。这些节点的带宽资源相对充足，访问延迟也在可接受范围内。通过手动解析到这些节点，可以有效分担香港节点的压力，提升访问速度。&lt;/p&gt;
+&lt;h3&gt;操作步骤&lt;/h3&gt;
+&lt;h4&gt;1. 在 Vercel 绑定域名&lt;/h4&gt;
+&lt;p&gt;首先，需要在 Vercel 上绑定您的自定义域名：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;登录 Vercel 仪表盘。&lt;/li&gt;
+&lt;li&gt;选择您的项目，进入项目设置。&lt;/li&gt;
+&lt;li&gt;在 &quot;Domains&quot; 部分，添加您的自定义域名并验证所有权。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;2. 设置域名 CNAME 为 &lt;code&gt;vercel.cdn.yt-blog.top&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;接下来，修改您的域名 DNS 配置，将 CNAME 记录指向 &lt;code&gt;vercel.cdn.yt-blog.top&lt;/code&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;进入您的域名管理后台（通常由域名注册商提供）。&lt;/li&gt;
+&lt;li&gt;找到需要优化的域名的 DNS 配置。&lt;/li&gt;
+&lt;li&gt;修改 CNAME 记录，将原来的 &lt;code&gt;cname.vercel.com&lt;/code&gt; 替换为 &lt;code&gt;vercel.cdn.yt-blog.top&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;保存配置，等待 DNS 生效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;3. 完工&lt;/h4&gt;
+&lt;p&gt;完成以上步骤后，您的网站将通过优化的节点进行加速访问。您可以通过访问网站，感受速度提升效果。&lt;/p&gt;
+&lt;h3&gt;加速效果&lt;/h3&gt;
+&lt;p&gt;使用加速节点后，访问请求会自动解析到附近可用节点，从而减轻香港节点的负载压力，提升整体访问速度。需要注意的是，最终的数据会回源至原始 Vercel 服务器，因此数据安全无需担心。&lt;/p&gt;
+&lt;h2&gt;注意事项&lt;/h2&gt;
+&lt;p&gt;虽然此加速服务提供了显著的访问速度提升，但由于该服务并非官方提供，稳定性和长期可用性需要用户自行评估和监控。在使用过程中，如遇到访问问题，建议及时调整或返回原始 DNS 配置。&lt;/p&gt;
+&lt;h2&gt;结论&lt;/h2&gt;
+&lt;p&gt;通过手动解析到更优质的节点，可以有效提升 Vercel 部署站点在中国大陆的访问速度。本文介绍的方法简单易行，对于希望改善访问体验的站长们，不妨一试。在实施过程中，如遇到任何问题，可参考更多技术文档或向社区寻求帮助。&lt;/p&gt;
+</content:encoded><category>网络工具</category></item><item><title>脚本收集</title><link>https://blog.june.ink/posts/scripts/</link><guid isPermaLink="true">https://blog.june.ink/posts/scripts/</guid><description>本文介绍了几个关于GNU/Linux系统软件源更换、Docker安装、IP质量检测以及科技lion一键脚本工具的相关脚本。主要涉及中国大陆、中国大陆教育网和海外地区的系统软件源更换，IP质量检测脚本包括多家数据库查询、DNS黑名单查询、IPV4和IPV6检测等。科技lion提供了官网版、GitHub版和国内版三种一键脚本工具。</description><pubDate>Sat, 27 Jul 2024 23:14:49 GMT</pubDate><content:encoded>&lt;h2&gt;GNU/Linux 更换系统软件源脚本及 Docker 安装脚本&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;中国大陆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -sSL https://linuxmirrors.cn/main.sh)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;中国大陆教育网&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -sSL https://linuxmirrors.cn/main.sh) --edu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;海外地区&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -sSL https://linuxmirrors.cn/main.sh) --abroad
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;融合怪测评脚本&lt;/h2&gt;
+&lt;h3&gt;融合怪命令&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;curl -L https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh -o ecs.sh &amp;amp;&amp;amp; chmod +x ecs.sh &amp;amp;&amp;amp; bash ecs.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;IP质量检测&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;IP质量检测，含多家数据库查询，含DNS黑名单查询&lt;/li&gt;
+&lt;li&gt;含 &lt;code&gt;IPV4&lt;/code&gt; 和 &lt;code&gt;IPV6&lt;/code&gt; 检测，含ASN和地址查询&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;bash &amp;lt;(wget -qO- bash.spiritlhl.net/ecs-ipcheck)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;科技lion一键脚本工具&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;官网版&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;curl -sS -O https://kejilion.pro/kejilion.sh &amp;amp;&amp;amp; chmod +x kejilion.sh &amp;amp;&amp;amp; ./kejilion.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub版&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh &amp;amp;&amp;amp; chmod +x kejilion.sh &amp;amp;&amp;amp; ./kejilion.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;国内版&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;curl -sS -O https://raw.gitmirror.com/kejilion/sh/main/cn/kejilion.sh &amp;amp;&amp;amp; chmod +x kejilion.sh &amp;amp;&amp;amp; ./kejilion.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;IP质量体检脚本&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;默认双栈检测&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;bash &amp;lt;(curl -Ls IP.Check.Place)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;只检测IPv4结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;bash &amp;lt;(curl -Ls IP.Check.Place) -4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;只检测IPv6结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;bash &amp;lt;(curl -Ls IP.Check.Place) -6
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded><category>脚本工具</category></item><item><title>小米AX3000T刷机</title><link>https://blog.june.ink/posts/xiao-mi-ax3000t/</link><guid isPermaLink="true">https://blog.june.ink/posts/xiao-mi-ax3000t/</guid><description>本文介绍了如何为路由器开启并固化SSH功能的步骤。首先，通过访问路由器管理页面获取Stok变量，然后通过命令提示符解锁SSH并获取密码。接着，通过MobaXterm连接路由器的SSH，并执行自启脚本来软固化SSH，这个过程包括了两个方法：在线和离线。完成这些之后，需要执行额外的命令来硬固化SSH，确保每次重启后SSH功能依然可用。最后，提醒每次升级或重置固件后都需要重新开启SSH。</description><pubDate>Wed, 29 May 2024 17:50:13 GMT</pubDate><content:encoded>&lt;h2&gt;步骤 1: 获取 Stok 变量&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 Chrome 浏览器。&lt;/li&gt;
+&lt;li&gt;登录到路由器的管理页面，通常地址为 &lt;code&gt;http://192.168.31.1/&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;在浏览器的地址栏中查找 Stok 变量的值，此值将用于后续的 SSH 解锁命令。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;http://192.168.31.1/cgi-bin/luci/;stok=030b24d39b1a4a549aa12dac23c52313/web/home#router
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;则 &lt;code&gt;Stok=030b24d39b1a4a549aa12dac23c52313&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注：每次路由器重启，stok 值都会改变。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;步骤 2: 解锁 SSH&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开命令提示符（cmd），依次输入以下命令，注意将 &lt;code&gt;token&lt;/code&gt; 替换为第一步中获得的实际 Stok 值：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;curl -X POST http://192.168.31.1/cgi-bin/luci/;stok=token/api/misystem/arn_switch -d &quot;open=1&amp;amp;model=1&amp;amp;level=%0Anvram%20set%20ssh_en%3D1%0A&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;curl -X POST http://192.168.31.1/cgi-bin/luci/;stok=token/api/misystem/arn_switch -d &quot;open=1&amp;amp;model=1&amp;amp;level=%0Anvram%20commit%0A&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;curl -X POST http://192.168.31.1/cgi-bin/luci/;stok=token/api/misystem/arn_switch -d &quot;open=1&amp;amp;model=1&amp;amp;level=%0Ased%20-i%20&apos;s%2Fchannel%3D.*%2Fchannel%3D%22debug%22%2Fg&apos;%20%2Fetc%2Finit.d%2Fdropbear%0A&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;curl -X POST http://192.168.31.1/cgi-bin/luci/;stok=token/api/misystem/arn_switch -d &quot;open=1&amp;amp;model=1&amp;amp;level=%0A%2Fetc%2Finit.d%2Fdropbear%20start%0A&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;步骤3: 获取SSH密码&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;访问 &lt;a href=&quot;https://miwifi.dev/ssh&quot;&gt;https://miwifi.dev/ssh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;输入你的路由器序列号（SN）。序列号可在路由器背部找到，或者通过路由器的管理界面查看。&lt;/li&gt;
+&lt;li&gt;系统将显示SSH密码。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;步骤4: 软固化SSH&lt;/h2&gt;
+&lt;p&gt;通过MobaXterm连接路由器的ssh后，执行以下指令（执行后会自动把ssh密码改成admin）：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;nvram set ssh_en=1
+nvram set telnet_en=1
+nvram set uart_en=1
+nvram set boot_wait=on
+nvram commit
+sed -i &apos;s/channel=.*/channel=&quot;debug&quot;/g&apos; /etc/init.d/dropbear
+/etc/init.d/dropbear restart
+echo -e &apos;admin\nadmin&apos; | passwd root
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;路由器重启后，dropbear文件会恢复成未修改以前的样子，因此要添加一个自启脚本，路由器每次启动，都会自动执行脚本，修改dropbear文件，开启ssh。
+此步骤有两种方法，一种是在线获取脚本，一种离线手动创建脚本，二选一即可。&lt;/p&gt;
+&lt;h3&gt;在线方法&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;mkdir /data/auto_ssh &amp;amp;&amp;amp; cd /data/auto_ssh
+curl -O [文件下载链接]
+chmod +x auto_ssh.sh
+./auto_ssh.sh install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;离线方法&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;mkdir /data/auto_ssh &amp;amp;&amp;amp; cd /data/auto_ssh
+vi auto_ssh.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此时进入了vi编辑器，首先将下面脚本内容复制到剪切板：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;#!/bin/sh
+
+auto_ssh_dir=&quot;/data/auto_ssh&quot;
+host_key=&quot;/etc/dropbear/dropbear_rsa_host_key&quot;
+host_key_bk=&quot;${auto_ssh_dir}/dropbear_rsa_host_key&quot;
+
+unlock() {
+    # Restore the host key.
+    [ -f $host_key_bk ] &amp;amp;&amp;amp; ln -sf $host_key_bk $host_key
+
+    # Enable telnet, ssh, uart and boot_wait.
+    [ &quot;$(nvram get telnet_en)&quot; = 0 ] &amp;amp;&amp;amp; nvram set telnet_en=1 &amp;amp;&amp;amp; nvram commit
+    [ &quot;$(nvram get ssh_en)&quot; = 0 ] &amp;amp;&amp;amp; nvram set ssh_en=1 &amp;amp;&amp;amp; nvram commit
+    [ &quot;$(nvram get uart_en)&quot; = 0 ] &amp;amp;&amp;amp; nvram set uart_en=1 &amp;amp;&amp;amp; nvram commit
+    [ &quot;$(nvram get boot_wait)&quot; = &quot;off&quot; ]  &amp;amp;&amp;amp; nvram set boot_wait=on &amp;amp;&amp;amp; nvram commit
+
+    [ &quot;`uci -c /usr/share/xiao **  get xiao ** _version.version.CHANNEL`&quot; != &apos;stable&apos; ] &amp;amp;&amp;amp; {
+        uci -c /usr/share/xiao **  set xiao ** _version.version.CHANNEL=&apos;stable&apos; 
+        uci -c /usr/share/xiao **  commit xiao ** _version.version 2&amp;gt;/dev/null
+    }
+
+    channel=`/sbin/uci get /usr/share/xiao ** /xiao ** _version.version.CHANNEL`
+    if [ &quot;$channel&quot; = &quot;release&quot; ]; then
+        sed -i &apos;s/channel=.*/channel=&quot;debug&quot;/g&apos; /etc/init.d/dropbear
+    fi
+
+    if [ -z &quot;$(pidof dropbear)&quot; -o -z &quot;$(netstat -ntul | grep :22)&quot; ]; then
+        /etc/init.d/dropbear restart 2&amp;gt;/dev/null
+        /etc/init.d/dropbear enable
+    fi
+}
+
+install() {
+    # unlock SSH.
+    unlock
+
+    # host key is empty, restart dropbear to generate the host key.
+    [ -s $host_key ] || /etc/init.d/dropbear restart 2&amp;gt;/dev/null
+
+    # Backup the host key.
+    if [ ! -s $host_key_bk ]; then
+        i=0
+        while [ $i -le 30 ]
+        do
+            if [ -s $host_key ]; then
+                cp -f $host_key $host_key_bk 2&amp;gt;/dev/null
+                break
+            fi
+            let i++
+            sleep 1s
+        done
+    fi
+
+    # Add script to system autostart
+    uci set firewall.auto_ssh=include
+    uci set firewall.auto_ssh.type=&apos;script&apos;
+    uci set firewall.auto_ssh.path=&quot;${auto_ssh_dir}/auto_ssh.sh&quot;
+    uci set firewall.auto_ssh.enabled=&apos;1&apos;
+    uci commit firewall
+    echo -e &quot;\033[32m SSH unlock complete. \033[0m&quot;
+}
+
+uninstall() {
+    # Remove scripts from system autostart
+    uci delete firewall.auto_ssh
+    uci commit firewall
+    echo -e &quot;\033[33m SSH unlock has been removed. \033[0m&quot;
+}
+
+main() {
+    [ -z &quot;$1&quot; ] &amp;amp;&amp;amp; unlock &amp;amp;&amp;amp; return
+    case &quot;$1&quot; in
+    install)
+        install
+        ;;
+    uninstall)
+        uninstall
+        ;;
+    *)
+        echo -e &quot;\033[31m Unknown parameter: $1 \033[0m&quot;
+        return 1
+        ;;
+    esac
+}
+
+main &quot;$@&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;复制好后，回到vi编辑界面，按下 &lt;code&gt;i&lt;/code&gt; 进入编辑模式，然后按下 &lt;code&gt;CTRL+SHIFT+V&lt;/code&gt; 粘贴完成后，按一下 &lt;code&gt;ESC&lt;/code&gt;，再输入 &lt;code&gt;:wq&lt;/code&gt;，回车即可。注意是英文的:&lt;/p&gt;
+&lt;p&gt;确认没有问题后，执行下面的指令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;chmod +x auto_ssh.sh
+./auto_ssh.sh install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;步骤5: 硬固化SSH&lt;/h2&gt;
+&lt;p&gt;通过MobaXterm连接路由器的ssh后，执行以下指令（执行后会自动重启）：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;zz=$(dd if=/dev/zero bs=1 count=2 2&amp;gt;/dev/null) ; printf &apos;\xA5\x5A%c%c&apos; $zz $zz | mtd write - crash
+reboot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;等待路由器重启后，重新连接ssh，并执行以下指令（执行后会自动重启）：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;nvram set ssh_en=1
+nvram set telnet_en=1
+nvram set uart_en=1
+nvram set boot_wait=on
+nvram commit
+bdata set ssh_en=1
+bdata set telnet_en=1
+bdata set uart_en=1
+bdata set boot_wait=on
+bdata commit
+reboot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;等待路由器重启后，重新连接ssh，并执行以下指令（执行后会自动重启）：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;mtd erase crash
+reboot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;等待路由器重启后，重新连接ssh，固化完成。&lt;/p&gt;
+&lt;h2&gt;注意事项&lt;/h2&gt;
+&lt;p&gt;每次升级固件或重置固件后，都需要先telnet，再在telnet中开启ssh。&lt;/p&gt;
+&lt;p&gt;具体方法为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用MobaXterm通过telnet连接路由器，用户名为 &lt;code&gt;root&lt;/code&gt;，密码为初始密码，输入后即可登入路由器telnet后台。&lt;/li&gt;
+&lt;li&gt;通过telnet开启ssh，并修改root密码为admin：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;sed -i &apos;/flg_ssh=`nvram get ssh_en`/{:loop; N; /\n.*channel=`\/sbin\/uci get \/usr\/share\/xiao ** \/xiao ** _version.version.CHANNEL`\n.*return 0\n.*fi/!b loop; d}&apos; /etc/init.d/dropbear
+/etc/init.d/dropbear restart
+echo -e &apos;admin\nadmin&apos; | passwd root
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;使用MobaXterm通过ssh连接路由器，用户名为 &lt;code&gt;root&lt;/code&gt;，密码为 &lt;code&gt;admin&lt;/code&gt;，输入后即可登入路由器ssh后台，登入后再做一遍步骤4软固化即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自定义密码：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;echo -e &apos;你的密码\n你的密码&apos; | passwd root
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-器，用户名为&quot;&gt;2. 通过 telnet 开启 ssh，并修改 root 密码为 admin：
+
+```sh
+sed -i &apos;/flg_ssh=`nvram get ssh_en`/{:loop; N; /\n.*channel=`\/sbin\/uci get \/usr\/share\/xiao ** \/xiao ** _version.version.CHANNEL`\n.*return 0\n.*fi/!b loop; d}&apos; /etc/init.d/dropbear
+/etc/init.d/dropbear restart
+echo -e &apos;admin\nadmin&apos; | passwd root
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 MobaXterm 通过 ssh 连接路由器，用户名为 root，密码为 admin，输入后即可登入路由器 ssh 后台，登入后再做一遍步骤 4 软固化即可。&lt;/li&gt;
+&lt;li&gt;自定义密码：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;echo -e &apos;你的密码\n你的密码&apos; | passwd root
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded><category>硬件刷机</category></item><item><title>Meting-API Docker 部署指南</title><link>https://blog.june.ink/posts/meting-api-deploy-docker/</link><guid isPermaLink="true">https://blog.june.ink/posts/meting-api-deploy-docker/</guid><description>本文提供了如何使用Docker和Docker Compose安装和配置Meting-API服务的指南。首先，需创建包含Docker配置文件的项目文件夹和Docker Compose文件。然后，在终端中运行Docker Compose命令来启动Meting-API容器。此外，还提供了关于如何配置反向代理和如何处理常见问题（如修改端口和查看日志）的信息。</description><pubDate>Mon, 29 Apr 2024 16:45:57 GMT</pubDate><content:encoded>&lt;h2&gt;前置要求&lt;/h2&gt;
+&lt;p&gt;确保您的系统已安装以下软件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker&lt;/li&gt;
+&lt;li&gt;Docker Compose&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;您可以访问 Docker 官网来获取安装指南。&lt;/p&gt;
+&lt;h2&gt;设置项目&lt;/h2&gt;
+&lt;h3&gt;1. 创建项目文件夹&lt;/h3&gt;
+&lt;p&gt;首先，在您希望的位置创建一个新的文件夹，这将用于存放 Docker 配置文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;mkdir meting-api
+cd meting-api
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;2. 创建 Docker Compose 文件&lt;/h3&gt;
+&lt;p&gt;在 &lt;code&gt;meting-api&lt;/code&gt; 文件夹中，创建一个名为 &lt;code&gt;docker-compose.yml&lt;/code&gt; 的文件，并粘贴以下内容：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;version: &apos;3.8&apos;
+
+services:
+  meting:
+    image: intemd/meting-api:latest
+    container_name: meting
+    ports:
+      - &quot;3000:3000&quot;
+    restart: always
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/04/29/vxjnITVgeUYJCB1.png&quot; alt=&quot;&quot; /&gt;
+这个配置定义了使用 &lt;code&gt;intemd/meting-api:latest&lt;/code&gt; 镜像的一个服务。服务将映射 3000 端口到容器的 3000 端口，并设置为始终重新启动。&lt;/p&gt;
+&lt;h3&gt;3. 保存文件&lt;/h3&gt;
+&lt;p&gt;确保 &lt;code&gt;docker-compose.yml&lt;/code&gt; 文件已经正确保存。&lt;/p&gt;
+&lt;h2&gt;运行 Docker Compose&lt;/h2&gt;
+&lt;p&gt;在包含 &lt;code&gt;docker-compose.yml&lt;/code&gt; 文件的目录中，打开终端或命令行工具，运行以下命令来启动您的 Meting-API 容器：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker-compose up -d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;该命令会在后台启动 Meting-API 服务。&lt;/p&gt;
+&lt;h2&gt;配置反向代理规则&lt;/h2&gt;
+&lt;p&gt;在你的反向代理配置文件中加入以下的规则&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;location /meting/ {
+    proxy_pass http://localhost:3000/;
+    proxy_set_header X-Forwarded-Host $scheme://$host:$server_port/meting;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.sa.net/2024/04/29/QNKjtHrW9P4Zpnf.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;常见问题解答&lt;/h2&gt;
+&lt;h3&gt;修改端口号&lt;/h3&gt;
+&lt;p&gt;如果您需要改变容器对外的端口，只需修改 &lt;code&gt;docker-compose.yml&lt;/code&gt; 中的 &lt;code&gt;ports&lt;/code&gt; 部分。例如，将端口改为 &lt;code&gt;4000:3000&lt;/code&gt;。&lt;/p&gt;
+&lt;h3&gt;查看容器日志&lt;/h3&gt;
+&lt;p&gt;要查看容器的日志，可以使用以下命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker-compose logs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/xizeyoupan/Meting-API&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content:encoded><category>运维部署</category></item><item><title>如何在Linux与Windows上部署FRP服务端</title><link>https://blog.june.ink/posts/frp-server-deployment-guide/</link><guid isPermaLink="true">https://blog.june.ink/posts/frp-server-deployment-guide/</guid><description>本文介绍了如何在Linux和Windows系统上部署FRP服务端。Linux部分包括安装Docker和Docker Compose，创建FRPs的安装目录，编写docker-compose.yml和frps.toml配置文件，最后启动FRP服务端的Docker容器。Windows部分则涉及下载FRP，解压FRP压缩包，修改frps.toml配置文件，以及编写和运行启动脚本。</description><pubDate>Fri, 23 Feb 2024 23:07:06 GMT</pubDate><content:encoded>&lt;h2&gt;在Linux系统部署FRP服务端&lt;/h2&gt;
+&lt;h3&gt;1. Docker和Docker Compose的安装&lt;/h3&gt;
+&lt;p&gt;为了确保FRP服务端的灵活部署和管理，首先需要安装Docker和Docker Compose。Docker提供了容器化技术，而Docker Compose则方便我们管理容器。安装命令如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;bash &amp;lt;(curl -sSL [https://linuxmirrors.cn/docker.sh](https://linuxmirrors.cn/other/))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这条命令会从Linux镜像网站下载并安装Docker，简化了安装过程。&lt;/p&gt;
+&lt;h3&gt;2. 创建FRPs的安装目录&lt;/h3&gt;
+&lt;p&gt;接下来，我们需要创建一个目录，用于存放FRP服务端的相关文件。执行以下命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;mkdir -p /root/data/docker/frps
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;cd /root/data/docker/frps
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;3. 编写docker-compose.yml配置文件&lt;/h3&gt;
+&lt;p&gt;Docker Compose通过YAML文件定义多容器的Docker应用。我们需要创建并编辑docker-compose.yml文件，定义FRP服务端的容器配置：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;version: &apos;3.3&apos;
+
+services:
+
+frps:
+
+restart: always
+
+network\_mode: host
+
+volumes:
+
+  - &apos;./frps.toml:/etc/frp/frps.toml&apos;
+
+container\_name: frps
+
+image: snowdreamtech/frps
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个配置文件指示Docker Compose如何部署FRP服务端容器。&lt;/p&gt;
+&lt;h3&gt;4. 编写frps.toml配置文件&lt;/h3&gt;
+&lt;p&gt;FRP服务端的配置通过frps.toml文件进行。我们需要创建这个文件并填入必要的配置信息：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-toml&quot;&gt;[common]
+
+bind\_port= 5443
+
+kcp\_bind\_port = 5443
+
+dashboard\_user= 请修改此处
+
+dashboard\_pwd= 请修改此处
+
+dashboard\_port= 请修改此处
+
+token = 请修改此处
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;请确保替换配置文件中的占位符（“请修改此处”）为实际的值。&lt;/p&gt;
+&lt;h3&gt;5. 启动FRP服务端的Docker容器&lt;/h3&gt;
+&lt;p&gt;配置文件准备好之后，就可以启动FRP服务端的Docker容器了：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker-compose up -d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这条命令会以后台模式启动容器。&lt;/p&gt;
+&lt;h2&gt;在Windows系统部署FRP服务端&lt;/h2&gt;
+&lt;h3&gt;1. 下载FRP&lt;/h3&gt;
+&lt;p&gt;根据你的Windows系统架构（32位或64位），从FRP的GitHub仓库下载相应版本的FRP。&lt;/p&gt;
+&lt;h3&gt;2. 解压FRP压缩包&lt;/h3&gt;
+&lt;p&gt;将下载的FRP压缩包解压到适合的目录，比如 &lt;code&gt;C:\frp&lt;/code&gt;。&lt;/p&gt;
+&lt;h3&gt;3. 修改frps.toml配置文件&lt;/h3&gt;
+&lt;p&gt;在FRP解压目录中找到或新建frps.toml配置文件，填写服务器端配置信息。&lt;/p&gt;
+&lt;h3&gt;4. 编写启动脚本&lt;/h3&gt;
+&lt;p&gt;在FRP目录下创建一个名为start.bat的批处理文件，内容如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bat&quot;&gt;cmd /k &quot;frps.exe -c frps.toml&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;双击运行start.bat批处理文件，即可启动FRP服务端。&lt;/p&gt;
+</content:encoded><category>运维部署</category></item><item><title>Linux基础命令学习：文件和系统操作</title><link>https://blog.june.ink/posts/linux-basic-commands-guide/</link><guid isPermaLink="true">https://blog.june.ink/posts/linux-basic-commands-guide/</guid><description>本文介绍了Linux环境下的一些基本命令用法。包括查看、切换和显示目录信息的命令`ls`, `cd`, `pwd`；系统信息查看命令`uname`及清屏命令`clear`；文件操作命令如`cat`, `cp`, `mv`, `mkdir`, `touch`, `rm`, `rmdir`；用户身份切换命令`sudo`；以及网络配置命令`ifconfig`和系统重启关机命令`reboot`, `poweroff`。这些命令帮助用户进行日常的文件管理和系统维护。</description><pubDate>Tue, 27 Jun 2023 23:00:48 GMT</pubDate><content:encoded>&lt;h2&gt;目录信息查看&lt;/h2&gt;
+&lt;h3&gt;目录查看命令&lt;/h3&gt;
+&lt;p&gt;当你打开终端时，第一个你可能需要的命令就是&lt;code&gt;ls&lt;/code&gt;。这个命令能够让你快速查看当前目录下的文件和文件夹。它的语法相当简单：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ls [-alrtAFR] [name...]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参数解释：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-a&lt;/code&gt;：显示所有文件和目录，包括隐藏文件。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-d&lt;/code&gt;：只列出目录本身，而非其内的文件。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-l&lt;/code&gt;：以详细列表格式显示文件信息。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-r&lt;/code&gt;：倒序显示文件。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-t&lt;/code&gt;：按修改时间排序。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-A&lt;/code&gt;：与`-a`类似，但不显示`.`和`..`。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-F&lt;/code&gt;：在文件名后添加一个字符以指示文件类型。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-R&lt;/code&gt;：递归显示所有子目录内容。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ls -l
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;目录切换命令&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;cd&lt;/code&gt;命令让你能够在目录之间跳转：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;cd [dirName]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参数解释：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dirName&lt;/code&gt;：目标目录的路径。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~&lt;/code&gt;：跳转到用户的主目录。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;../..&lt;/code&gt;：上移两级目录。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;cd /home/user/Documents
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;当前路径显示命令&lt;/h3&gt;
+&lt;p&gt;使用&lt;code&gt;pwd&lt;/code&gt;命令，你可以快速知道当前所在的目录路径：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;pwd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;示例输出：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/home/user/Documents
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;系统信息查看&lt;/h2&gt;
+&lt;h3&gt;系统信息命令&lt;/h3&gt;
+&lt;p&gt;了解正在使用的系统类型，你可以使用&lt;code&gt;uname&lt;/code&gt;命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;uname
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;示例输出：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;Linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;清理屏幕命令&lt;/h3&gt;
+&lt;p&gt;如果你的终端界面太乱，&lt;code&gt;clear&lt;/code&gt;命令可以帮你清理屏幕，让一切重新开始：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;clear
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;显示文件内容命令&lt;/h3&gt;
+&lt;p&gt;要查看某个文件的内容，使用&lt;code&gt;cat&lt;/code&gt;命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;cat [file...]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参数解释：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;file&lt;/code&gt;：要显示内容的文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;cat file1.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;示例输出：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;Hello, world!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;用户和文件操作&lt;/h2&gt;
+&lt;h3&gt;切换用户身份命令&lt;/h3&gt;
+&lt;p&gt;如果你需要以另一用户的身份执行命令，可以使用&lt;code&gt;sudo&lt;/code&gt;：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo [command]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt-get update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;文件拷贝、移动、创建和删除&lt;/h3&gt;
+&lt;p&gt;拷贝、移动、创建和删除文件或目录，分别使用&lt;code&gt;cp&lt;/code&gt;、&lt;code&gt;mv&lt;/code&gt;、&lt;code&gt;mkdir&lt;/code&gt;、&lt;code&gt;touch&lt;/code&gt;、&lt;code&gt;rm&lt;/code&gt;、&lt;code&gt;rmdir&lt;/code&gt;命令。这些基础命令是每个 Linux 用户都应该掌握的。&lt;/p&gt;
+&lt;h3&gt;显示网络配置信息命令&lt;/h3&gt;
+&lt;p&gt;网络配置是系统管理中的重要部分。&lt;code&gt;ifconfig&lt;/code&gt;命令可以帮助你查看和配置网络接口：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ifconfig
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;重启和关机命令&lt;/h3&gt;
+&lt;p&gt;管理系统时，你可能需要重新启动或关闭计算机。&lt;code&gt;reboot&lt;/code&gt;和&lt;code&gt;poweroff&lt;/code&gt;命令可以帮你轻松完成这些操作。&lt;/p&gt;
+</content:encoded><category>Linux教程</category></item><item><title>Ubuntu文件系统目录结构解析</title><link>https://blog.june.ink/posts/ubuntu-file-system-structure/</link><guid isPermaLink="true">https://blog.june.ink/posts/ubuntu-file-system-structure/</guid><description>本文介绍了Ubuntu文件系统的结构，包括根目录“/”以及常见的子目录如/bin, /boot, /dev等，各目录存放的内容和用途。还解释了绝对路径和相对路径的概念，绝对路径从根目录开始，而相对路径则是相对于当前工作目录。</description><pubDate>Sat, 24 Jun 2023 19:19:14 GMT</pubDate><content:encoded>&lt;h1&gt;Ubuntu文件系统结构&lt;/h1&gt;
+&lt;h2&gt;根目录“/”&lt;/h2&gt;
+&lt;p&gt;在 Linux 下，“/”表示根目录，所有的目录都是从根目录开始衍生。&lt;/p&gt;
+&lt;h2&gt;常见目录及其作用&lt;/h2&gt;
+&lt;h3&gt;&lt;code&gt;/bin&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;存放二进制可执行文件，即使在单用户模式下也能使用。既可以被 root 用户也可以被普通账户使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/boot&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;包含Ubuntu的内核和启动文件，例如`vmlinuz-xxx`和GRUB启动加载器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/dev&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;存放设备文件，用于系统与设备的交互。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/etc&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;包含系统配置文件，如用户账号和密码文件，服务的配置文件等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/home&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;系统默认的用户主目录，新建用户账户时，其主目录默认创建于此。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/lib&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;存放库文件，这些是执行文件运行时所需的动态链接共享库。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/media&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;为可移动存储设备提供挂载点，如SD卡和USB驱动器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/mnt&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;为用户挂载临时文件系统提供挂载点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/opt&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;存放可选的应用程序软件包，通常是第三方应用程序。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/root&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;root用户的主目录，即系统管理员的主目录。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/sbin&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;存放系统管理和维护的必需程序，类似于`/bin`但主要是系统启动和恢复时使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/srv&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;服务数据目录，存放服务相关的数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/sys&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;虚拟文件系统，提供内核与用户空间之间的接口。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/tmp&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;临时文件目录，存放临时文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/var&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;存放经常变化的文件，如日志文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/usr&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;UNIX软件资源，非用户个人文件，存放系统广泛使用的应用程序和文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;/proc&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;虚拟文件系统，存放运行时系统信息和内核信息，直接存储于内存中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;绝对路径和相对路径&lt;/h2&gt;
+&lt;h3&gt;绝对路径&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;从根目录“/”开始的完整路径，例如`/home/user/test/`。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;相对路径&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;相对于当前工作目录的路径。例如，`./test/`代表当前目录下的`test`目录，`..`代表上一层目录。&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded><category>Linux教程</category></item><item><title>Ubuntu上的多种软件安装方法指南</title><link>https://blog.june.ink/posts/ubuntu-software-installation-guide/</link><guid isPermaLink="true">https://blog.june.ink/posts/ubuntu-software-installation-guide/</guid><description>软件是指使计算机执行特定任务的程序和数据集合，包括系统软件和应用软件。方法安装Ubuntu软件包括通过APP Store、使用APT工具、安装deb软件包、下载源代码编译以及其他如.run或.bin文件形式。每种方法适应不同需求，如简便性或获取最新版本。</description><pubDate>Sat, 24 Jun 2023 13:52:28 GMT</pubDate><content:encoded>&lt;h1&gt;什么是软件？&lt;/h1&gt;
+&lt;p&gt;简单来说，软件是使计算机能够执行特定任务的程序和数据的总称。它由计算机程序和相关数据组成，形成了一系列可以执行特定功能的指令集。我们通常将软件分为两大类：系统软件和应用软件。系统软件构成了计算机系统的基础，包括了操作系统、驱动程序、语言处理器、编译器等；而应用软件则更加贴近我们的日常使用，如办公软件、游戏软件、多媒体软件等。&lt;/p&gt;
+&lt;h2&gt;Ubuntu软件安装方法&lt;/h2&gt;
+&lt;h3&gt;通过APP Store安装&lt;/h3&gt;
+&lt;p&gt;Ubuntu自带的APP Store是安装软件的一种极为便捷的方式。只需几个简单的点击，你就能找到并安装你需要的软件。这个过程完全自动化，让安装软件变得非常简单。不过，由于一些软件可能不在APP Store中，或者因为国内网络环境的原因，有时你可能需要尝试其他的安装方式。&lt;/p&gt;
+&lt;h3&gt;使用APT工具安装&lt;/h3&gt;
+&lt;p&gt;APT（Advanced Packaging Tool）是Ubuntu中的一种强大的包管理工具，它可以帮助我们自动完成软件的下载、配置和安装。使用APT时，你需要具备root权限，但不用担心，一个简单的`sudo`命令就能解决问题。以下是使用APT工具安装软件的基本步骤：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt update  # 更新软件源
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt install software\_name  # 安装软件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt remove software\_name  # 卸载软件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt upgrade  # 升级已安装的软件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;deb软件包安装&lt;/h3&gt;
+&lt;p&gt;在Ubuntu中，deb格式的软件包相当于Windows中的.exe安装文件。你可以直接下载.deb格式的软件包，然后通过几个简单的命令来安装它们：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo dpkg -i software\_name.deb  # 安装.deb软件包
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install -f  # 安装依赖
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo dpkg -i software\_name.deb  # 再次安装.deb软件包
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;自己下载程序源码编译安装&lt;/h3&gt;
+&lt;p&gt;对于一些没有提供.deb包的软件，或者你想安装最新版本的软件，下载源代码然后自行编译安装是一个不错的选择。这个过程虽然复杂，但也让你有机会深入了解软件的安装过程：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tar -zxvf software\_name.tar.gz  # 解压源代码
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;cd software\_name  # 进入源代码目录
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;./configure  # 生成Makefile文件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;make  # 编译源代码
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo make install  # 安装软件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;其他安装方法&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://xn--4gqqomhlcsjl9z569a0n7b3f1a53a.run&quot;&gt;还有一些软件可能会以.run&lt;/a&gt;或者.bin为扩展名的形式提供。这类文件通常是自解压的安装包，安装过程也非常直接：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo chmod +x software\_name.run  # 赋予可执行权限
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo ./software\_name.run  # 执行安装程序
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded><category>Linux教程</category></item><item><title>Ubuntu 18.04中如何关闭ROS智能小车AP模式及连接Wi-Fi</title><link>https://blog.june.ink/posts/linux-wifi-cli-configuration/</link><guid isPermaLink="true">https://blog.june.ink/posts/linux-wifi-cli-configuration/</guid><description>本文介绍了如何通过编辑 NetworkManager 配置文件来关闭 ROS 智能小车的 AP 模式，并连接到指定的 Wi-Fi 网络。步骤包括修改配置文件中的 [keyfile] 部分，重启 NetworkManager，检查无线网络接口状态，并使用特定命令连接到 Wi-Fi。若连接后网络状态异常，建议重启网络管理器或计算机。</description><pubDate>Tue, 13 Jun 2023 21:32:30 GMT</pubDate><content:encoded>&lt;h2&gt;步骤 1：编辑 NetworkManager 配置文件&lt;/h2&gt;
+&lt;p&gt;打开终端并输入以下命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;
+sudo nano /etc/NetworkManager/NetworkManager.conf
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;步骤 2：添加或修改 [keyfile] 部分&lt;/h2&gt;
+&lt;p&gt;在配置文件中找到 &lt;code&gt;[keyfile]&lt;/code&gt; 部分，或者如果没有找到，则创建一个。然后添加或修改以下行：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-plaintext&quot;&gt;unmanaged-devices=none
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这将允许 NetworkManager 管理所有设备。&lt;/p&gt;
+&lt;h2&gt;步骤 3：保存更改并关闭文件&lt;/h2&gt;
+&lt;p&gt;按 &lt;code&gt;Ctrl + X&lt;/code&gt; 保存更改并关闭文件。&lt;/p&gt;
+&lt;h2&gt;步骤 4：重启 NetworkManager&lt;/h2&gt;
+&lt;p&gt;在终端中执行以下命令以重启 NetworkManager：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo systemctl restart NetworkManager
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;步骤 5：检查无线网络接口状态&lt;/h2&gt;
+&lt;p&gt;使用以下命令检查无线网络接口（如 &lt;code&gt;wlan0&lt;/code&gt;）的状态：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;nmcli device status
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此时，无线网络接口应显示为 “disconnected” 或 “unmanaged”。&lt;/p&gt;
+&lt;h2&gt;步骤 6：连接到指定 Wi-Fi&lt;/h2&gt;
+&lt;p&gt;使用以下命令连接到指定 Wi-Fi，将 &lt;code&gt;&amp;lt;Wi-Fi名称&amp;gt;&lt;/code&gt; 和 &lt;code&gt;&amp;lt;密码&amp;gt;&lt;/code&gt; 替换为你的 Wi-Fi 名称和密码：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;nmcli device wifi connect &amp;lt;Wi-Fi名称&amp;gt; password &amp;lt;密码&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;步骤 7：重新检查无线网络接口状态&lt;/h2&gt;
+&lt;p&gt;再次使用以下命令检查无线网络接口的状态：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;nmcli device status
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果无线网卡状态不是 “connected” 或 “disconnected”，请尝试重启网络管理器或重新启动计算机。&lt;/p&gt;
+&lt;p&gt;现在，成功关闭了 ROS 智能小车的 AP 模式，并连接到了指定的 Wi-Fi 网络。&lt;/p&gt;
+</content:encoded><category>Linux教程</category></item><item><title>解决VMware虚拟机网络接口消失问题</title><link>https://blog.june.ink/posts/vmware-network-interface-fix/</link><guid isPermaLink="true">https://blog.june.ink/posts/vmware-network-interface-fix/</guid><description>在VMware虚拟机中，网络接口消失的问题可以通过停止、删除状态文件和重新启动网络管理器服务来解决。解决步骤包括使用管理员权限运行三条命令：停止网络服务，删除状态文件，和重新启动服务。这些操作可以帮助重新配置网络接口，解决网卡消失的问题。但需要注意，操作过程中会影响网络连接，并且在某些特殊情况下可能无法解决问题。</description><pubDate>Fri, 27 Aug 2021 18:29:25 GMT</pubDate><content:encoded>&lt;h1&gt;解决VMware虚拟机网络接口消失问题&lt;/h1&gt;
+&lt;h1&gt;问题来源&lt;/h1&gt;
+&lt;p&gt;VMware虚拟机在学习Linux的时候我经常会使用。然而，有时候，可能会遇到虚拟机的网络接口消失的问题，这会导致虚拟机无法连接到网络。&lt;/p&gt;
+&lt;h1&gt;解决方案&lt;/h1&gt;
+&lt;p&gt;解决VMware虚拟机网卡消失的问题，可以通过以下三条命令实现：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;停止网络管理器服务：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo service network-manager stop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除网络管理器状态文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;
+sudo rm /var/lib/NetworkManager/NetworkManager.state
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重新启动网络管理器服务：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;
+sudo service network-manager start
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;这些命令的作用&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo service network-manager stop&lt;/code&gt;：这条命令会停止网络管理器服务。网络管理器是一个用于管理网络接口的工具，它可以自动配置网络接口并处理网络连接。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo rm /var/lib/NetworkManager/NetworkManager.state&lt;/code&gt;：这条命令会删除网络管理器的状态文件。这个文件保存了网络管理器的当前状态，如果这个文件出现问题，可能会导致网络接口消失。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo service network-manager start&lt;/code&gt;：这条命令会重新启动网络管理器服务，这样就可以重新配置网络接口，解决网卡消失的问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;注意事项&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;需要管理员权限：这些命令需要管理员权限才能执行，所以在命令前面加上`sudo`。&lt;/li&gt;
+&lt;li&gt;可能会影响网络连接：这些命令会停止和重新启动网络管理器服务，这可能会影响到其他正在使用网络的应用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;虽然我分享的这个方法在我以及我身边朋友出现该类问题时都能解决问题，但也有可能在某些特殊情况下无效。如果遇到这种情况，你可能需要寻找其他解决方案。&lt;/p&gt;
+</content:encoded><category>Linux教程</category></item></channel></rss>
